@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorMK1Activity">
+
+    <EditText
+        android:id="@+id/calcfield"
+        android:layout_width="305dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="16dp"
+        android:clickable="false"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/calcbtn8"
+        app:layout_constraintEnd_toStartOf="@+id/finishedNumber"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/calcbtn9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calcAdd"
+        android:text="9"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calcbtn8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/calcbtn8" />
+
+    <Button
+        android:id="@+id/calcbtn8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calcAdd"
+        android:text="8"
+        app:layout_constraintBottom_toTopOf="@+id/calcbtn5"
+        app:layout_constraintEnd_toStartOf="@+id/calcbtn9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/calcbtn7"
+        app:layout_constraintTop_toBottomOf="@+id/calcfield" />
+
+    <Button
+        android:id="@+id/calcbtn7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calcAdd"
+        android:text="7"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calcbtn8"
+        app:layout_constraintEnd_toStartOf="@+id/calcbtn8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calcbtn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calcAdd"
+        android:text="6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calcbtn5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/calcbtn5" />
+
+    <Button
+        android:id="@+id/calcbtn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calcAdd"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@+id/calcbtn2"
+        app:layout_constraintEnd_toStartOf="@+id/calcbtn6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/calcbtn4"
+        app:layout_constraintTop_toBottomOf="@+id/calcbtn8" />
+
+    <Button
+        android:id="@+id/calcbtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calcAdd"
+        android:text="4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calcbtn5"
+        app:layout_constraintEnd_toStartOf="@+id/calcbtn5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calcbtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calcAdd"
+        android:text="3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calcbtn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/calcbtn2" />
+
+    <Button
+        android:id="@+id/calcbtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calcAdd"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/calcbtn0"
+        app:layout_constraintEnd_toStartOf="@+id/calcbtn3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/calcbtn1"
+        app:layout_constraintTop_toBottomOf="@+id/calcbtn5" />
+
+    <Button
+        android:id="@+id/calcbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calcAdd"
+        android:text="1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calcbtn2"
+        app:layout_constraintEnd_toStartOf="@+id/calcbtn2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calcbtn0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="calcAdd"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/calcbtncalc"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/calcbtndel"
+        app:layout_constraintTop_toBottomOf="@+id/calcbtn2" />
+
+    <Button
+        android:id="@+id/calcbtncalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calcbtn0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/calcbtn0" />
+
+    <Button
+        android:id="@+id/calcbtndel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calcDelete"
+        android:text="del"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calcbtn0"
+        app:layout_constraintEnd_toStartOf="@+id/calcbtn0"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/finishedNumber"
+        android:layout_width="54dp"
+        android:layout_height="103dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/calcfield"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
