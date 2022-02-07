@@ -23,7 +23,7 @@ class HaveIBeenPwnedPublicApiActivity : AppCompatActivity() {
         val url = "https://haveibeenpwned.com/api/v3/breach/" + findViewById<TextView>(R.id.breachText).text
         val jsonObjectRequest = JsonObjectRequest(Request.Method.GET, url, null,
             { response ->
-                textView.text = "Response: %s".format(response.toString())
+                textView.text = "Response: $response"
             },
             { error ->
                 textView.text = error.toString()
